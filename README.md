@@ -27,9 +27,8 @@ static genLose(){
             text += '🍑'
         }
     }
-    return text + '🗿'```
+    return text + '🗿'
 
-```js
 static genWin(){
     let str = ''
     if(Math.round(Math.random())){
