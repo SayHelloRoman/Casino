@@ -1,14 +1,14 @@
 const express = require('express')
-const emogi = require('./emoji/EmojiGenerator')
+const emoji = require('./emoji/EmojiGenerator')
 
 const app = express()
 const port = 3000
 
 app.get('/casino', (req, res) => {
   if(Math.round(Math.random())){
-    res.send(emogi.Generator.genWin())
+    res.send(emoji.Generator.genWin())
   }else {
-    res.send(emogi.Generator.genLose())
+    res.send(emoji.Generator.genLose())
   }
 })
 
